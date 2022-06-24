@@ -61,13 +61,13 @@ body {
 }
 .perfil h2 {
     color: var(--white);
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .perfil span {
     color: var(--white);
     letter-spacing: 2px; /* Para crear un espacio entre letras*/
-    font-size: 21px;
+    font-size: 19px;
 }
 
 #fecha {
