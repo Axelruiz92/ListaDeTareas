@@ -159,6 +159,11 @@ body {
     color: gray;
 }
 
+.fa-check-circle {
+    background: linear-gradient(    135deg,    hsl(192, 100%, 67%) 13%,    hsl(280, 87%, 65%) 66%  );
+    border-radius: 12px;
+}
+
 /*Seccion tarea*/
 @media (max-width: 380px) {
 
