@@ -12,6 +12,11 @@ let id = 4
 
 const LIST=[]
 
+//creacion de fecha
+
+const FECHA = new Date()
+fecha.innerHTML = FECHA.toLocaleDateString('es-AR', {weekday:'long', month:'short', day:'numeric'})
+
 
 
 
