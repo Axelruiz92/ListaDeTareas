@@ -57,15 +57,17 @@ body {
      /*paddings de la seccion nombre, fecha, etc.*/
     font-size: 20px;
     width: 600px;
-    justify-content: center;
+  
 }
 .perfil h2 {
     color: var(--white);
+    font-size: 36px;
 }
 
 .perfil span {
     color: var(--white);
     letter-spacing: 2px; /* Para crear un espacio entre letras*/
+    font-size: 21px;
 }
 
 #fecha {
