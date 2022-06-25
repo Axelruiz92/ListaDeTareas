@@ -1,0 +1,187 @@
+:root {
+    --white: #ffffff;
+    --purple: #da6cfc;
+    --blue: #b3abff;
+    --red: #ffa3a3;
+    --yellow: #fff8ab;
+    --green: #bfffab;
+    --black: #000000;
+    --lightblue: #00c8ff;
+    --darkblue: #0d0676;
+    --softblue: #2bb1bb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f4f6;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#fondo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 11;
+}
+.img {
+
+    width: 100%;
+    height: 220px;
+      
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   
+    z-index: 90;
+    position:fixed;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 30px;
+   
+}
+
+/* Perfil*/
+
+.perfil {
+    display: grid;
+    gap: 10px;
+     /*paddings de la seccion nombre, fecha, etc.*/
+    font-size: 20px;
+    width: 600px;
+}
+.perfil h2 {
+    color: var(--white);
+    font-size: 30px;
+}
+
+.perfil span {
+    color: var(--white);
+    letter-spacing: 2px; /* Para crear un espacio entre letras*/
+    font-size: 19px;
+}
+
+#fecha {
+    color: var(--white);
+}
+
+/*Agregar Tarea*/
+
+.agregar-tarea {
+    display: flex;
+    padding: 20px 0px 20px 0px; /*paddings de la seccion agregar una tarea*/
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    color: var(--purple);
+    gap: 3px;
+}
+
+.agregar-tarea input {
+    margin-left: 10px;
+    width: 90%;
+    height: 36px;
+    border: none;
+    padding-left: 5px;
+    
+}
+
+.agregar-tarea input::placeholder {
+    color: var(--black);
+    font-size: 13px;
+
+}
+
+.agregar-tarea i {
+    font-size: 30px;
+    cursor: pointer;
+   
+}
+
+/*Seccion Tarea*/
+
+.seccion-tarea {
+    display: grid;
+    border-radius: 10px;
+    background: var(--white);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.seccion-tarea h3 {
+    color: var(--black);
+    padding-left: 190px;
+    border-bottom: 1px solid rgb(208, 208, 208);
+    padding-bottom: 20px;
+    font-size: 15px;
+
+}
+
+.seccion-tarea li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 15px; */
+    background-color: var(--white);
+    padding: 10px; /*le da altura al mini contenedor*/
+    color: rgb(30, 30, 30);
+    margin-bottom: 0px; /*margen para los divs de tareas que se vayan agregando*/
+    justify-content: space-between; /*los elementos dentro de la tarea se expanden, se separan entre si*/
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.seccion-tarea i {
+    font-size: 20px;
+    color: rgb(62, 62, 174);
+    
+}
+
+.seccion-tarea >ul p {
+    font-size: 15px;
+}
+
+
+.seccion-tarea i:hover {
+    color: var(--softblue); /*cuando pasamos el cursor cambia color*/
+    cursor: pointer; /*se muestra la manito*/
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.fa-check-circle {
+    background: linear-gradient(    135deg,    hsl(192, 100%, 67%) 13%,    hsl(280, 87%, 65%) 66%  );
+    border-radius: 12px;
+}
+
+
+/*Seccion tarea*/
+@media (max-width: 380px) {
+
+    body {
+        width: 300px;
+    }
+
+
+
+    .perfil {
+        display: grid;
+        gap: 10px;
+        padding: 20px 0px 20px 0px; /*paddings de la seccion nombre, fecha, etc.*/
+        font-size: 15px;
+    }
+
+}
+

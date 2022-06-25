@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <!--Josefin Sans Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!--Fin Josefin Sans Font-->
+    <title>ToDoList</title>
+   
+</head>
+<body>
+
+    <header id="fondo">
+        <img src="imagenes/lake.jpg" class="img">
+    </header>
+
+    <main class="container">
+        
+        <div class="perfil">
+             <div id="fecha"> </div>
+             <h2>Tareas de hoy</h2>
+             <span>Vamos a cumplir tus metas</span>
+            
+        </div>
+
+
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="Agregar una tarea">
+            <i id="enter" class="fas fa-circle-plus"></i>
+        </div>
+
+
+        <div class="seccion-tarea">
+            <h3>Estas son tus tareas pendientes</h3>
+            <ul id="lista">
+               <li>
+                    <i class="fa-regular fa-circle" data="realizado" id="0" ></i>
+                    <p class="text ">Hacer las compras </p>
+                    <i class="fas fa-trash" data="eliminado" id="0"></i>
+
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-circle" data="realizado" id="1" ></i>
+                    <p class="text "> Leer durante una hora </p>
+                    <i class="fas fa-trash" data="eliminado" id="1"></i>
+
+                </li>
+
+            
+                <li>
+                    <i class="fa-regular fa-circle" data="realizado" id="2" ></i>
+                    <p class="text "> 20 minutos de ejercicio </p>
+                    <i class="fas fa-trash" data="eliminado" id="2"></i>
+
+                </li>
+               
+            </ul>
+        </div>
+    
+    </main>
+<script src="script.js"></script>
+
+</body>
+</html>
